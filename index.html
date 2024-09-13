@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-links">
+        <div class="logo-name">Tammisetty Sai Maneeswara Vikas</div>
+        <div>
+            <ul class="navigation-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experiance">Experiance</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact-me">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo-name">Tammisetty Sai Maneeswara Vikas</div>
+        <div class="hamburger-menu">   
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experiance" onclick="toggleMenu()">Experiance</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact-me" onclick="toggleMenu()">Contact Me</a></li>
+          </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="My__profile-pic">
+             <img src="./assets/image.jpg" alt="My-profile-picture"/>
+        </div>
+        <div class="section-text">
+             <p class="section-text-p1">Hello, I'm</p>
+             <h2 class="title">Tammisetty Sai Maneeswara Vikas
+             </h2>
+             <p class="section-text-p2">Frontend Developer
+             </p>
+             <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resume_Resume.pdf')">Download Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact-me'">Contact Me
+                </button>
+             </div>
+             <div id="social-container">
+                <img 
+                    src="./assets/linkedin.png" 
+                    alt="My linkedin Profile" 
+                    class="icon"
+                    onclick="location.href='https://linkedin.com'"/>
+                <img
+                    src="./assets/github.png"
+                    alt="My github profile"
+                    class="icon"
+                    onclick="location.href='https://github.com'"/>
+             </div>
+        </div>
+    </section>
+    <section id="about">
+      <p class="section-text-p1"> Get To Know More
+      </p>
+      <h2 class="title">About Me</h2>
+      <div class="section-container">
+        <div class="section-pic-container">
+          <img class="about-pic" src="./assets/about pic.jpeg" alt="My-profile-picture">
+        </div>
+        <div class="about-details-container">
+          <div class="about-container">
+            <div class="details-container">
+              <img class="icon" src="./assets/experience.png" alt="experiance pic" />
+              <h3>Experiance</h3>
+              <p>This is my first project<br/> Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img class="icon" src="./assets/education.png" alt="education pic"/>
+              <h3>Education</h3>
+              <p>B.Tech. Bachelor's Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>Vasireddy Venkatadri Institute of Technology, Guntur — B-Tech in <br />
+              Mechanical Engineering <br />  
+              2019 - 2023 <br />
+              Earned a CGPA of 8.38 out of 10 <br />
+              Narayana Junior College, Mangalagiri — Intermediate in MPC <br />  
+              2017 - 2019 <br />
+              Earned a CGPA of 9.94 out of 10 <br />
+              Narayana E.M School, Mangalagiri — 10th Class <br />
+              2016 - 2017 <br />
+              Earned a CGPA of 9.7 out of 10</p>
+          </div>
+        </div>
+      </div>
+      <img class="arrow" src="./assets/arrow.png" alt="arrow pic" onclick="location.href='./#experiance'" />
+    </section>
+    <section id="experiance">
+      <p class="section-text-p1">Explore My</p>
+      <h2 class="title">Experiance</h2>
+      <div class="experiance-details-container">
+        <div class="about-container">
+          <div class="details-container">
+            <h3 class="experiance-sub-title">Frontend Development</h3>
+            <div class="article-container">
+              <article>
+                <img class="experiance-icon" src="./assets/checkmark.png" alt="experiance icon" width="25px"/>
+                <h4>HTML5</h4>
+                <p>Intermediate</p>
+              </article>
+              <article>
+                <img class="experiance-icon" src="./assets/checkmark.png" alt="experiance icon" width="25px"/>
+                <h4>CSS3</h4>
+                <p>Intermediate</p>
+              </article>
+              <article>
+                <img class="experiance-icon" src="./assets/checkmark.png" alt="experiance icon" width="25px"/>
+                <h4>JavaScript</h4>
+                <p>Basic</p>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h3 class="experiance-sub-title Backend">Backend Development</h3>
+            <div class="article-container">
+              <article>
+                <img class="experiance-icon" src="./assets/checkmark.png" alt="experiance icon" width="25px"/>
+                <h4>PostgreSQL</h4>
+                <p>Basic</p>
+              </article>
+              <article>
+                <img class="experiance-icon" src="./assets/checkmark.png" alt="experiance icon" width="25px"/>
+                <h4>Node JS</h4>
+                <p>Basic</p>
+              </article>
+              <article>
+                <img class="experiance-icon" src="./assets/checkmark.png" alt="experiance icon" width="25px"/>
+                <h4>ExpressJS</h4>
+                <p>Basic</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="arrow" src="./assets/arrow.png" alt="arrow pic" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+      <p class="section-text-p1">Browse my Recent</p>
+      <h2 class="title">Projects</h2>
+      <div class="experiance-details-container">
+        <div class="about-container">
+         <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img" src="./assets/project-1.png" alt="project-1-img" />
+          </div>
+          <h3 class="experiance-sub-title project-title">Project One</h3>
+          <div class="btn-container">
+            <a href="https://github.com" target="_blank">
+             <button class="btn btn-color-2 project-btn">GitHub
+             </button>
+            </a>
+          </div>
+         </div>
+         <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img" src="./assets/project-2.png" alt="project-2-img" />
+          </div>
+          <h3 class="experiance-sub-title project-title">Project Two</h3>
+          <div class="btn-container">
+            <a href="https://github.com" target="_blank">
+             <button class="btn btn-color-2 project-btn">GitHub
+             </button>
+            </a>
+          </div>
+         </div>
+         <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img" src="./assets/project-3.png" alt="project-3-img" />
+          </div>
+          <h3 class="experiance-sub-title project-title">Project Three</h3>
+          <div class="btn-container">
+            <a href="https://github.com" target="_blank">
+              <button class="btn btn-color-2 project-btn">GitHub 
+              </button>
+            </a>
+          </div>
+         </div>
+        </div>
+      </div>  
+      <img class="arrow" src="./assets/arrow.png" alt="arrow pic" onclick="location.href='./#contact-me'" />
+    </section>
+    <section id="contact-me">
+      <p class="section-text-p1">Get in Touch</p>
+      <h2 class="title-contact-me">Contact Me</h2>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <div id="contact-me-container">
+            <form>
+              <h2>Contact Form</h2>
+              <input type="text" name="Name" placeholder="Full Name" required>
+              <input type="email" name="Email" placeholder="Email" required>
+              <input type="text" name="Subject" placeholder="Subject" required>
+              <textarea name="Message" placeholder="Message" required></textarea>
+              <button class="submit" type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img class="icon contact-icon gmail-icon" src="./assets/email.png" 
+          alt="Email icon"  
+          />
+          <p> <a href="https://www.gmail.com" target="_blank">Gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img class="icon contact-icon" src="./assets/linkedin.png" 
+          alt="linkedin icon"  
+          />
+          <p> <a href="https://linkedin.com" target="_blank">linkedin</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="navigation-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experiance">Experiance</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Tammisetty Sai Maneeswara Vikas. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>    
+</body>
+</html>
